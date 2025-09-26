@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVision Solutions - Your Digital Partner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>TechVision</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#profile" class="nav-link">Our Profile</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="welcome-message">
+                <h1 id="welcome-text">Hi Guest! Welcome to TechVision Solutions</h1>
+                <p>Your trusted partner in digital transformation and innovative technology solutions.</p>
+                <button class="cta-button" onclick="promptName()">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&crop=center" alt="Team collaboration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile-section">
+        <!-- Photo Banner -->
+        <div class="photo-banner">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=400&fit=crop&crop=center" alt="Modern office space">
+            <div class="banner-overlay">
+                <h2>Our Profile</h2>
+                <p>Leading the future of technology</p>
+            </div>
+        </div>
+
+        <!-- About the Company -->
+        <div class="profile-content">
+            <div class="about-company">
+                <div class="container">
+                    <h3>About TechVision Solutions</h3>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>Founded in 2018, TechVision Solutions has emerged as a leading technology company specializing in digital transformation, software development, and innovative IT solutions. We serve businesses across various industries, helping them leverage cutting-edge technology to achieve their goals.</p>
+                            <p>Our team of expert developers, designers, and consultants work collaboratively to deliver exceptional results that exceed client expectations. We pride ourselves on our commitment to quality, innovation, and customer satisfaction.</p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h4>500+</h4>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>50+</h4>
+                                <p>Expert Team Members</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>6</h4>
+                                <p>Years of Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision and Mission -->
+            <div class="vision-mission">
+                <div class="container">
+                    <div class="vm-grid">
+                        <div class="vision">
+                            <div class="vm-card">
+                                <div class="vm-icon">🎯</div>
+                                <h3>Our Vision</h3>
+                                <p>To be the global leader in innovative technology solutions, empowering businesses to thrive in the digital age through cutting-edge technology and exceptional service delivery.</p>
+                            </div>
+                        </div>
+                        <div class="mission">
+                            <div class="vm-card">
+                                <div class="vm-icon">🚀</div>
+                                <h3>Our Mission</h3>
+                                <p>We are committed to delivering world-class technology solutions that drive business growth, enhance operational efficiency, and create sustainable value for our clients through innovation, expertise, and dedication.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="services">
+                <div class="container">
+                    <h3>Our Services</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">💻</div>
+                            <h4>Web Development</h4>
+                            <p>Custom web applications and responsive websites tailored to your business needs.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">📱</div>
+                            <h4>Mobile Apps</h4>
+                            <p>Native and cross-platform mobile applications for iOS and Android devices.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">☁️</div>
+                            <h4>Cloud Solutions</h4>
+                            <p>Scalable cloud infrastructure and migration services for modern businesses.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">🔒</div>
+                            <h4>Cybersecurity</h4>
+                            <p>Comprehensive security solutions to protect your digital assets and data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Message Us</h2>
+            <p>Get in touch with our team for your next project</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>📍 Address</h4>
+                        <p>123 Tech Street<br>Innovation District<br>Jakarta, Indonesia 12345</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📞 Phone</h4>
+                        <p>+62 21 1234 5678</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>✉️ Email</h4>
+                        <p>info@techvision.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>🕐 Business Hours</h4>
+                        <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 9:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Submission Result -->
+    <div id="submission-result" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Form Submission Details</h3>
+            <div id="result-content"></div>
+            <button onclick="closeModal()" class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>TechVision Solutions</h3>
+                    <p>Innovating the future, one solution at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#profile">Our Profile</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">Cloud Solutions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVision Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
